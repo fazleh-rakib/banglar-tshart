@@ -15,15 +15,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch ('tshirt.json'),
       },
       {
         path: "review",
-        element: <OrderReview />
+        element: <OrderReview />,
       },
       {
-       path: 'about',
-       element: <Aboout />
-      }
+        path: "about",
+        element: <Aboout />,
+      },
     ],
   },
 ]);
