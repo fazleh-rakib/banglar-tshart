@@ -13,7 +13,9 @@ const Home = () => {
   };
 
   const handleRemoveCart = id =>{
-    console.log(id);
+    const remaaining = cart.filter(ts => ts._id !== id)
+    setCart(remaaining)
+    
   }
   return (
     <div className="home-container">
